@@ -9,36 +9,109 @@ import yaml
 import cv2
 import numpy as np
 
+
 PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
+
+
+def get_data_paths(data_yaml_path):
+    """
+    Extract and resolve paths from data.yaml dynamically
+    Handles both 'train/images' and 'images/train' formats
+    """
+    with open(data_yaml_path, 'r') as f:
+        data_config = yaml.safe_load(f)
+
+    # Get base path
+    data_yaml_dir = Path(data_yaml_path).parent.resolve()
+    base_path_str = data_config.get('path', '.')
+    base_path = Path(base_path_str)
+
+    # If path is relative, resolve it from PROJECT_ROOT, not data.yaml location
+    if not base_path.is_absolute():
+        # Check if path exists relative to project root first
+        project_base = PROJECT_ROOT / base_path_str
+        yaml_base = data_yaml_dir / base_path_str
+
+        if project_base.exists():
+            base_path = project_base.resolve()
+        elif yaml_base.exists():
+            base_path = yaml_base.resolve()
+        else:
+            # Default to project root
+            base_path = project_base.resolve()
+
+    print(f"\nResolved base path: {base_path}")
+
+    paths = {}
+
+    # Process each split (train, val, test)
+    for split_key in ['train', 'val', 'test']:
+        if split_key not in data_config:
+            continue
+
+        # Get the path from yaml
+        split_path = data_config[split_key]
+
+        # Determine if this is images or labels path
+        if 'images' in str(split_path):
+            # Path contains 'images' - get corresponding labels path
+            labels_path = str(split_path).replace('images', 'labels')
+            images_path = split_path
+        else:
+            # Path doesn't contain 'images' - assume it's a base path
+            # Try common patterns
+            if (base_path / split_path / 'images').exists():
+                images_path = f"{split_path}/images"
+                labels_path = f"{split_path}/labels"
+            elif (base_path / 'images' / split_path).exists():
+                images_path = f"images/{split_path}"
+                labels_path = f"labels/{split_path}"
+            else:
+                # Fallback: assume images and labels are siblings
+                images_path = split_path
+                labels_path = split_path.replace('images', 'labels')
+
+        paths[split_key] = {
+            'images': base_path / images_path,
+            'labels': base_path / labels_path
+        }
+
+    return paths, data_config
 
 
 def analyze_dataset(data_yaml_path):
     """Analyze dataset and provide training recommendations"""
 
-    # Load data config
-    with open(data_yaml_path, 'r') as f:
-        data_config = yaml.safe_load(f)
-
-    data_root = Path(data_config['path'])
-    class_names = data_config['names']
-
     print("="*80)
     print("DATASET ANALYSIS")
     print("="*80)
 
+    # Load data config and get paths
+    paths, data_config = get_data_paths(data_yaml_path)
+    class_names = data_config['names']
+
+    print(f"\nData root: {Path(data_config['path']).resolve()}")
+    print(f"Number of classes: {data_config['nc']}")
+    print(f"Class names: {class_names}")
+
     # Analyze each split
-    splits = ['train', 'val', 'test']
     split_stats = {}
 
-    for split in splits:
-        split_name = 'valid' if split == 'val' else split
-        labels_dir = data_root / 'labels' / split_name
-        images_dir = data_root / 'images' / split_name
+    for split_key, split_paths in paths.items():
+        images_dir = split_paths['images']
+        labels_dir = split_paths['labels']
+
+        print(f"\n{split_key.upper()}:")
+        print(f"  Images: {images_dir}")
+        print(f"  Labels: {labels_dir}")
 
         if not labels_dir.exists():
-            print(
-                f"\n⚠ Warning: {split} labels directory not found: {labels_dir}")
+            print(f"  ⚠ Warning: Labels directory not found!")
+            continue
+
+        if not images_dir.exists():
+            print(f"  ⚠ Warning: Images directory not found!")
             continue
 
         # Count images and labels
@@ -46,6 +119,8 @@ def analyze_dataset(data_yaml_path):
         image_files = []
         for ext in ['.jpg', '.jpeg', '.png', '.JPG', '.JPEG', '.PNG']:
             image_files.extend(images_dir.glob(f'*{ext}'))
+
+        print(f"  Found: {len(image_files)} images, {len(label_files)} labels")
 
         # Class distribution
         class_counts = defaultdict(int)
@@ -61,7 +136,7 @@ def analyze_dataset(data_yaml_path):
 
                 for line in lines:
                     parts = line.strip().split()
-                    if len(parts) >= 5:
+                    if len(parts) >= 5:  # Standard bbox format
                         cls_id = int(parts[0])
                         class_counts[cls_id] += 1
                         total_objects += 1
@@ -81,7 +156,7 @@ def analyze_dataset(data_yaml_path):
                     image_sizes.append(
                         (img.shape[1], img.shape[0]))  # width, height
 
-        split_stats[split] = {
+        split_stats[split_key] = {
             'num_images': len(image_files),
             'num_labels': len(label_files),
             'total_objects': total_objects,
@@ -93,15 +168,18 @@ def analyze_dataset(data_yaml_path):
         }
 
     # Print statistics
+    print("\n" + "="*80)
+    print("DATASET STATISTICS")
+    print("="*80)
     print(
         f"\n{'Split':<10} {'Images':<10} {'Labels':<10} {'Objects':<10} {'Obj/Img':<10}")
     print("-" * 80)
-    for split in splits:
-        if split in split_stats:
-            stats = split_stats[split]
+    for split_key in ['train', 'val', 'test']:
+        if split_key in split_stats:
+            stats = split_stats[split_key]
             avg_obj = np.mean(stats['objects_per_image']
                               ) if stats['objects_per_image'] else 0
-            print(f"{split:<10} {stats['num_images']:<10} {stats['num_labels']:<10} "
+            print(f"{split_key:<10} {stats['num_images']:<10} {stats['num_labels']:<10} "
                   f"{stats['total_objects']:<10} {avg_obj:<10.2f}")
 
     # Class distribution
@@ -194,17 +272,18 @@ def generate_recommendations(split_stats, class_names):
 
     # Dataset size recommendations
     if num_images < 500:
-        recs['Model Selection'].append("Small dataset: Use YOLOv8n or YOLOv8s")
+        recs['Model Selection'].append(
+            "Small dataset: Use YOLOv11n or YOLOv11s")
         recs['Model Selection'].append("Consider data augmentation heavily")
         recs['Training'].append("Use pretrained weights (default)")
-        recs['Training'].append("Lower learning rate: --lr0 0.001")
+        recs['Training'].append("Lower learning rate: --lr0 0.005")
     elif num_images < 2000:
         recs['Model Selection'].append(
-            "Medium dataset: Use YOLOv8s or YOLOv8m")
+            "Medium dataset: Use YOLOv11s or YOLOv11m")
         recs['Training'].append("Standard augmentation should work well")
     else:
         recs['Model Selection'].append(
-            "Large dataset: YOLOv8m or YOLOv8l recommended")
+            "Large dataset: YOLOv11m or YOLOv11l recommended")
         recs['Training'].append("Can use higher learning rates")
 
     # Class imbalance
@@ -234,12 +313,12 @@ def generate_recommendations(split_stats, class_names):
 
         if avg_objects < 2:
             recs['Training'].append(
-                "Few objects per image: Standard batch size (16-32)")
+                "Few objects per image: Standard batch size (8-16)")
         else:
             recs['Training'].append(
                 f"Multiple objects per image (avg: {avg_objects:.1f})")
             recs['Training'].append(
-                "Consider larger batch size if GPU allows (32-64)")
+                "Consider smaller batch size for memory: 8-16")
 
     # Object size recommendations
     if train_stats['bbox_sizes']:
@@ -255,10 +334,10 @@ def generate_recommendations(split_stats, class_names):
 
     # Epochs recommendation
     if num_images < 500:
-        recs['Training'].append("Small dataset: 150-300 epochs recommended")
-        recs['Training'].append("Use early stopping: --patience 50")
+        recs['Training'].append("Small dataset: 150-200 epochs recommended")
+        recs['Training'].append("Use early stopping: --patience 75")
     elif num_images < 2000:
-        recs['Training'].append("Medium dataset: 100-200 epochs")
+        recs['Training'].append("Medium dataset: 100-150 epochs")
         recs['Training'].append("Use early stopping: --patience 50")
     else:
         recs['Training'].append(
@@ -266,9 +345,9 @@ def generate_recommendations(split_stats, class_names):
         recs['Training'].append("Use early stopping: --patience 30")
 
     # Batch size
-    recs['Batch Size'].append("Start with --batch 16")
-    recs['Batch Size'].append("Increase to 32 or 64 if GPU memory allows")
-    recs['Batch Size'].append("Reduce to 8 if you get OOM errors")
+    recs['Batch Size'].append("Start with --batch 8")
+    recs['Batch Size'].append("Increase to 16 if GPU memory allows")
+    recs['Batch Size'].append("Reduce to 4 if you get OOM errors")
 
     # Augmentation
     recs['Augmentation'].append("Always use data augmentation")
@@ -290,51 +369,47 @@ def generate_training_commands(split_stats, recommendations):
 
     print("\n1. QUICK TEST (Fast training to verify setup):")
     print("-" * 80)
-    print("""python scripts/train.py \\
-    --model yolov8n \\
-    --data config/data.yaml \\
-    --epochs 10 \\
-    --batch 16 \\
-    --imgsz 640 \\
-    --name quick_test""")
+    print("""python train.py \\
+  --model yolov11n \\
+  --epochs 10 \\
+  --batch 8 \\
+  --imgsz 640 \\
+  --name quick_test""")
 
     print("\n2. BASELINE TRAINING (Good starting point):")
     print("-" * 80)
 
     if num_images < 500:
-        cmd = """python scripts/train.py \\
-    --model yolov8n \\
-    --data config/data.yaml \\
-    --epochs 200 \\
-    --batch 16 \\
-    --imgsz 640 \\
-    --lr0 0.001 \\
-    --patience 50 \\
-    --mosaic 1.0 \\
-    --mixup 0.15 \\
-    --name baseline_small_dataset"""
+        cmd = """python train.py \\
+  --model yolov11s \\
+  --epochs 150 \\
+  --batch 8 \\
+  --imgsz 1024 \\
+  --lr0 0.005 \\
+  --patience 75 \\
+  --mosaic 1.0 \\
+  --mixup 0.15 \\
+  --name baseline_small_dataset"""
     elif num_images < 2000:
-        cmd = """python scripts/train.py \\
-    --model yolov8s \\
-    --data config/data.yaml \\
-    --epochs 150 \\
-    --batch 32 \\
-    --imgsz 640 \\
-    --lr0 0.01 \\
-    --patience 50 \\
-    --mosaic 1.0 \\
-    --name baseline_medium_dataset"""
+        cmd = """python train.py \\
+  --model yolov11s \\
+  --epochs 100 \\
+  --batch 16 \\
+  --imgsz 640 \\
+  --lr0 0.01 \\
+  --patience 50 \\
+  --mosaic 1.0 \\
+  --name baseline_medium_dataset"""
     else:
-        cmd = """python scripts/train.py \\
-    --model yolov8m \\
-    --data config/data.yaml \\
-    --epochs 100 \\
-    --batch 32 \\
-    --imgsz 640 \\
-    --lr0 0.01 \\
-    --patience 30 \\
-    --mosaic 1.0 \\
-    --name baseline_large_dataset"""
+        cmd = """python train.py \\
+  --model yolov11m \\
+  --epochs 100 \\
+  --batch 16 \\
+  --imgsz 640 \\
+  --lr0 0.01 \\
+  --patience 30 \\
+  --mosaic 1.0 \\
+  --name baseline_large_dataset"""
 
     print(cmd)
 
@@ -342,30 +417,31 @@ def generate_training_commands(split_stats, recommendations):
     print("-" * 80)
 
     if num_images < 500:
-        cmd = """python scripts/train.py \\
-    --model yolov8s \\
-    --data config/data.yaml \\
-    --epochs 300 \\
-    --batch 16 \\
-    --imgsz 640 \\
-    --lr0 0.001 \\
-    --patience 100 \\
-    --mosaic 1.0 \\
-    --mixup 0.2 \\
-    --save-period 20 \\
-    --name production_v1"""
+        cmd = """python train.py \\
+  --model yolov11s \\
+  --epochs 200 \\
+  --batch 8 \\
+  --imgsz 1024 \\
+  --lr0 0.005 \\
+  --patience 100 \\
+  --degrees 10.0 \\
+  --translate 0.2 \\
+  --fliplr 0.5 \\
+  --mosaic 1.0 \\
+  --mixup 0.15 \\
+  --save-period 20 \\
+  --name production_v1"""
     else:
-        cmd = """python scripts/train.py \\
-    --model yolov8m \\
-    --data config/data.yaml \\
-    --epochs 150 \\
-    --batch 32 \\
-    --imgsz 640 \\
-    --lr0 0.01 \\
-    --patience 50 \\
-    --mosaic 1.0 \\
-    --save-period 20 \\
-    --name production_v1"""
+        cmd = """python train.py \\
+  --model yolov11m \\
+  --epochs 150 \\
+  --batch 16 \\
+  --imgsz 640 \\
+  --lr0 0.01 \\
+  --patience 50 \\
+  --mosaic 1.0 \\
+  --save-period 20 \\
+  --name production_v1"""
 
     print(cmd)
 

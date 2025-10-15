@@ -5,7 +5,7 @@ test: test/images
 
 nc: 2
 names: ["empty", "occupied"]
-
+task: obb
 roboflow:
   workspace: patterns-mq36m
   project: parking-6eoex

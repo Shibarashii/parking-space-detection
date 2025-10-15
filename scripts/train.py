@@ -1,3 +1,4 @@
+# scripts/train.py
 """
 Training Script for Nail Feature Object Detection
 """

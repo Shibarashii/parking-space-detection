@@ -1,3 +1,4 @@
+# config/model_config.py
 """
 Model Configuration for Nail Feature Object Detection
 """

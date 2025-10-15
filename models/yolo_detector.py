@@ -1,3 +1,4 @@
+# models/yolo_detector.py
 """
 YOLO Detector Wrapper
 Modular wrapper for YOLO object detection models
