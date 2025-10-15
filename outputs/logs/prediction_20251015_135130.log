@@ -1,0 +1,13 @@
+2025-10-15 13:51:30 - prediction - INFO - ============================================================
+2025-10-15 13:51:30 - prediction - INFO - Starting Prediction
+2025-10-15 13:51:30 - prediction - INFO - ============================================================
+2025-10-15 13:51:30 - prediction - INFO - Weights: outputs/models/yolov11s-obb/weights/best.pt
+2025-10-15 13:51:30 - prediction - INFO - Source: data/3.png
+2025-10-15 13:51:30 - prediction - INFO - Confidence: 0.5
+2025-10-15 13:51:31 - prediction - INFO - Using device: cpu
+2025-10-15 13:51:31 - prediction - INFO - Model type: OBB
+2025-10-15 13:51:31 - prediction - INFO - Classes: ['empty', 'occupied']
+2025-10-15 13:51:31 - prediction - INFO - 
+Image 1: 17 detections
+2025-10-15 13:51:31 - prediction - INFO -   occupied: 17
+2025-10-15 13:51:31 - prediction - ERROR - Prediction failed: 'ParkingSummary' object has no attribute 'save_all'

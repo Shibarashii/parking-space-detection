@@ -1,0 +1,27 @@
+======================================================================
+PARKING SPACE DETECTION SUMMARY
+======================================================================
+
+PROCESSING INFORMATION
+----------------------------------------------------------------------
+Timestamp: 2025-10-15T13:57:09.792451
+Total Images: 1
+Processing Duration: 0:00:00.001251
+
+OVERALL STATISTICS
+----------------------------------------------------------------------
+Total Parking Spaces: 71
+Empty Spaces: 27
+Occupied Spaces: 44
+Occupancy Rate: 61.97%
+Availability Rate: 38.03%
+
+PER-IMAGE RESULTS
+----------------------------------------------------------------------
+
+Image: 1.png
+  Total Spaces: 71
+  empty: 27 (avg conf: 0.81)
+  occupied: 44 (avg conf: 0.83)
+
+======================================================================

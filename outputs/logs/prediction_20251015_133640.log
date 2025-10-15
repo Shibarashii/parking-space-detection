@@ -1,0 +1,19 @@
+2025-10-15 13:36:40 - prediction - INFO - ============================================================
+2025-10-15 13:36:40 - prediction - INFO - Starting Prediction
+2025-10-15 13:36:40 - prediction - INFO - ============================================================
+2025-10-15 13:36:40 - prediction - INFO - Weights: outputs/models/yolov11s-obb/weights/best.pt
+2025-10-15 13:36:40 - prediction - INFO - Source: data/3.png
+2025-10-15 13:36:40 - prediction - INFO - Confidence: 0.5
+2025-10-15 13:36:40 - prediction - INFO - Using device: cpu
+2025-10-15 13:36:40 - prediction - INFO - Model type: OBB
+2025-10-15 13:36:40 - prediction - INFO - Classes: ['empty', 'occupied']
+2025-10-15 13:36:41 - prediction - INFO - 
+Image 1: 17 detections
+2025-10-15 13:36:41 - prediction - INFO -   occupied: 17
+2025-10-15 13:36:41 - prediction - INFO - 
+Total detections: 17
+2025-10-15 13:36:41 - prediction - INFO - Average per image: 17.00
+2025-10-15 13:36:41 - prediction - INFO - 
+Results saved to: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_133640
+2025-10-15 13:36:41 - prediction - INFO - 
+✅ Prediction completed!
