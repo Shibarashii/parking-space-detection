@@ -1,0 +1,42 @@
+2025-10-15 03:22:17 - training - INFO - Starting training experiment: parking_detection
+2025-10-15 03:22:17 - training - INFO - Model: yolov11s-obb
+2025-10-15 03:22:17 - training - INFO - Data: /content/parking-space-detection/config/data.yaml
+2025-10-15 03:22:17 - training - INFO - Device: cuda:0
+2025-10-15 03:22:17 - training - INFO - Using pretrained weights: yolo11s-obb.pt
+2025-10-15 03:22:18 - training - INFO - Training configuration:
+2025-10-15 03:22:18 - training - INFO -   epochs: 100
+2025-10-15 03:22:18 - training - INFO -   batch: 8
+2025-10-15 03:22:18 - training - INFO -   imgsz: 1024
+2025-10-15 03:22:18 - training - INFO -   optimizer: auto
+2025-10-15 03:22:18 - training - INFO -   lr0: 0.005
+2025-10-15 03:22:18 - training - INFO -   lrf: 0.01
+2025-10-15 03:22:18 - training - INFO -   momentum: 0.937
+2025-10-15 03:22:18 - training - INFO -   weight_decay: 0.0005
+2025-10-15 03:22:18 - training - INFO -   warmup_epochs: 3.0
+2025-10-15 03:22:18 - training - INFO -   warmup_momentum: 0.8
+2025-10-15 03:22:18 - training - INFO -   warmup_bias_lr: 0.1
+2025-10-15 03:22:18 - training - INFO -   box: 7.5
+2025-10-15 03:22:18 - training - INFO -   cls: 0.5
+2025-10-15 03:22:18 - training - INFO -   dfl: 1.5
+2025-10-15 03:22:18 - training - INFO -   label_smoothing: 0.0
+2025-10-15 03:22:18 - training - INFO -   degrees: 10.0
+2025-10-15 03:22:18 - training - INFO -   translate: 0.2
+2025-10-15 03:22:18 - training - INFO -   scale: 0.5
+2025-10-15 03:22:18 - training - INFO -   shear: 0.0
+2025-10-15 03:22:18 - training - INFO -   perspective: 0.0001
+2025-10-15 03:22:18 - training - INFO -   flipud: 0.0
+2025-10-15 03:22:18 - training - INFO -   fliplr: 0.5
+2025-10-15 03:22:18 - training - INFO -   mosaic: 1.0
+2025-10-15 03:22:18 - training - INFO -   mixup: 0.15
+2025-10-15 03:22:18 - training - INFO -   copy_paste: 0.0
+2025-10-15 03:22:18 - training - INFO -   patience: 30
+2025-10-15 03:22:18 - training - INFO -   save_period: -1
+2025-10-15 03:22:18 - training - INFO -   hsv_h: 0.015
+2025-10-15 03:22:18 - training - INFO -   hsv_s: 0.4
+2025-10-15 03:22:18 - training - INFO -   hsv_v: 0.6
+2025-10-15 03:22:18 - training - INFO -   erasing: 0.0
+2025-10-15 03:22:18 - training - INFO -   seed: 0
+2025-10-15 03:22:18 - training - INFO -   resume: False
+2025-10-15 04:53:55 - training - INFO - Training completed successfully!
+2025-10-15 04:53:55 - training - INFO - Best model saved to: /content/parking-space-detection/outputs/models/parking_detection/weights/best.pt
+2025-10-15 04:53:55 - training - INFO - Last model saved to: /content/parking-space-detection/outputs/models/parking_detection/weights/last.pt

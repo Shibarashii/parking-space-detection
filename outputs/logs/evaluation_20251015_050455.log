@@ -1,0 +1,33 @@
+2025-10-15 05:04:55 - evaluation - INFO - ============================================================
+2025-10-15 05:04:55 - evaluation - INFO - Starting Model Evaluation
+2025-10-15 05:04:55 - evaluation - INFO - ============================================================
+2025-10-15 05:04:55 - evaluation - INFO - Weights: outputs/models/parking_detection/weights/best.pt
+2025-10-15 05:04:55 - evaluation - INFO - Data: /content/parking-space-detection/config/data.yaml
+2025-10-15 05:04:55 - evaluation - INFO - Split: val
+2025-10-15 05:04:55 - evaluation - INFO - Device: cuda:0
+2025-10-15 05:04:56 - evaluation - INFO - Evaluation configuration:
+2025-10-15 05:04:56 - evaluation - INFO -   batch: 16
+2025-10-15 05:04:56 - evaluation - INFO -   imgsz: 640
+2025-10-15 05:04:56 - evaluation - INFO -   conf: 0.001
+2025-10-15 05:04:56 - evaluation - INFO -   iou: 0.6
+2025-10-15 05:04:56 - evaluation - INFO -   max_det: 300
+2025-10-15 05:04:56 - evaluation - INFO -   split: val
+2025-10-15 05:04:56 - evaluation - INFO -   save_json: False
+2025-10-15 05:04:56 - evaluation - INFO -   save_hybrid: False
+2025-10-15 05:05:06 - evaluation - INFO - ============================================================
+2025-10-15 05:05:06 - evaluation - INFO - Evaluation Results
+2025-10-15 05:05:06 - evaluation - INFO - ============================================================
+2025-10-15 05:05:06 - evaluation - INFO - 
+Overall Metrics:
+2025-10-15 05:05:06 - evaluation - INFO -   Precision: 0.9454
+2025-10-15 05:05:06 - evaluation - INFO -   Recall:    0.9280
+2025-10-15 05:05:06 - evaluation - INFO -   mAP50:     0.9518
+2025-10-15 05:05:06 - evaluation - INFO -   mAP50-95:  0.9142
+2025-10-15 05:05:06 - evaluation - INFO - 
+Per-Class mAP50-95:
+2025-10-15 05:05:06 - evaluation - INFO -   empty                         : 0.9251
+2025-10-15 05:05:06 - evaluation - INFO -   occupied                      : 0.9033
+2025-10-15 05:05:06 - evaluation - INFO - 
+============================================================
+2025-10-15 05:05:06 - evaluation - INFO - Evaluation completed successfully!
+2025-10-15 05:05:06 - evaluation - INFO - ============================================================
