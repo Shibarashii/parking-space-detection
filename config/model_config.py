@@ -59,7 +59,15 @@ class ModelConfig:
         "yolov8x": {
             "name": "yolov8x.pt",
             "description": "YOLOv8 Extra Large - Highest accuracy"
-        }
+        },
+        "yolov11n-obb": {
+            "name": "yolo11n-obb.pt",
+            "description": "YOLOv11 Nano OBB - Oriented bounding boxes"
+        },
+        "yolov11s-obb": {
+            "name": "yolo11s-obb.pt",
+            "description": "YOLOv11 Small OBB - Best for angled parking spaces"
+        },
     }
 
     # Training hyperparameters
