@@ -1,4 +1,3 @@
-# utils/convert_to_obb.py
 """
 Convert mixed annotation formats to OBB (Oriented Bounding Box) format for YOLO
 Handles: standard boxes, polygons, and mixed formats
@@ -272,18 +271,53 @@ def validate_dataset(data_root):
 
 
 if __name__ == "__main__":
-    # Configuration
-    DATA_ROOT = "/content/parking-space-detection/data"
+    import argparse
+
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(
+        description="Convert parking space annotations to OBB format"
+    )
+    parser.add_argument(
+        "--data",
+        type=str,
+        required=True,
+        help="Root directory of the dataset (e.g., /path/to/data)"
+    )
+    parser.add_argument(
+        "--no-backup",
+        action="store_true",
+        help="Skip backing up original labels"
+    )
+    parser.add_argument(
+        "--validate-only",
+        action="store_true",
+        help="Only validate format without converting"
+    )
+
+    args = parser.parse_args()
+
+    # Verify data root exists
+    data_root_path = Path(args.data)
+    if not data_root_path.exists():
+        print(f"❌ Error: Data root not found: {args.data}")
+        exit(1)
 
     print("="*70)
     print("OBB Annotation Converter")
     print("="*70)
+    print(f"Data root: {args.data}")
+    print("="*70)
 
-    # Convert dataset
-    convert_dataset(DATA_ROOT, backup=True)
+    if args.validate_only:
+        # Only validate
+        validate_dataset(args.data)
+    else:
+        # Convert dataset
+        convert_dataset(args.data, backup=not args.no_backup)
 
-    # Validate conversion
-    validate_dataset(DATA_ROOT)
+        # Validate conversion
+        validate_dataset(args.data)
 
-    print("\n✓ Ready for training with OBB model!")
-    print("  Original labels backed up to: */labels_original/")
+        print("\n✓ Ready for training with OBB model!")
+        if not args.no_backup:
+            print("  Original labels backed up to: */labels_original/")
