@@ -1,6 +1,7 @@
 """
-Prediction Script for Nail Feature Object Detection
+Prediction Script for Object Detection
 Supports: images, videos, directories, and webcam/camera
+Compatible with both standard detection and OBB models
 """
 from utils.logger import get_logger
 from config.model_config import ModelConfig
@@ -85,12 +86,58 @@ def is_camera_source(source):
         return False
 
 
+def is_obb_model(model):
+    """Check if the model is an OBB model"""
+    try:
+        # Check model task type
+        if hasattr(model, 'model') and hasattr(model.model, 'task'):
+            return model.model.task == 'obb'
+        # Fallback: check model name
+        model_name = str(model.model_name) if hasattr(
+            model, 'model_name') else ''
+        return 'obb' in model_name.lower()
+    except:
+        return False
+
+
+def get_detections_info(result, is_obb=False):
+    """
+    Get detection information from result
+    Compatible with both standard and OBB models
+
+    Args:
+        result: YOLO result object
+        is_obb: Whether this is an OBB model
+
+    Returns:
+        tuple: (num_detections, classes, boxes_or_obb)
+    """
+    if is_obb:
+        # OBB model uses .obb instead of .boxes
+        if hasattr(result, 'obb') and result.obb is not None:
+            num_detections = len(result.obb)
+            classes = result.obb.cls.cpu().numpy() if num_detections > 0 else []
+            return num_detections, classes, result.obb
+        return 0, [], None
+    else:
+        # Standard detection model uses .boxes
+        if hasattr(result, 'boxes') and result.boxes is not None:
+            num_detections = len(result.boxes)
+            classes = result.boxes.cls.cpu().numpy() if num_detections > 0 else []
+            return num_detections, classes, result.boxes
+        return 0, [], None
+
+
 def predict_camera(detector, camera_idx, args, class_names):
     """Handle camera/webcam prediction with live view"""
     logger = get_logger("prediction")
 
+    # Check if OBB model
+    is_obb = is_obb_model(detector.model)
+    model_type = "OBB" if is_obb else "Detection"
+
     logger.info("\n" + "="*60)
-    logger.info("CAMERA MODE - LIVE VIEW")
+    logger.info(f"CAMERA MODE - LIVE VIEW ({model_type})")
     logger.info("="*60)
     logger.info(f"Camera index: {camera_idx}")
     logger.info(
@@ -120,36 +167,46 @@ def predict_camera(detector, camera_idx, args, class_names):
         while True:
             ret, frame = cap.read()
             if not ret:
+                logger.warning("Failed to read frame from camera")
                 break
 
             frame_count += 1
 
             # Predict on current frame
-            results = detector.predict(
-                source=frame,
-                conf=conf_threshold,
-                iou=args.iou,
-                imgsz=args.imgsz,
-                save=False,
-                verbose=False
-            )
+            try:
+                results = detector.predict(
+                    source=frame,
+                    conf=conf_threshold,
+                    iou=args.iou,
+                    imgsz=args.imgsz,
+                    save=False,
+                    verbose=False
+                )
 
-            # Get annotated frame
-            if results and len(results) > 0:
-                annotated_frame = results[0].plot()
-                num_detections = len(results[0].boxes)
+                # Get annotated frame
+                if results and len(results) > 0:
+                    result = results[0]
+                    annotated_frame = result.plot()
 
-                if num_detections > 0:
-                    classes = results[0].boxes.cls.cpu().numpy()
-                    y_offset = 30
-                    for cls_idx in range(len(class_names)):
-                        count = (classes == cls_idx).sum()
-                        if count > 0:
-                            text = f"{class_names[cls_idx]}: {count}"
-                            cv2.putText(annotated_frame, text, (10, y_offset),
-                                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
-                            y_offset += 25
-            else:
+                    # Get detections (compatible with both OBB and standard)
+                    num_detections, classes, _ = get_detections_info(
+                        result, is_obb)
+
+                    # Display detection counts
+                    if num_detections > 0 and len(class_names) > 0:
+                        y_offset = 30
+                        for cls_idx in range(len(class_names)):
+                            count = (classes == cls_idx).sum()
+                            if count > 0:
+                                text = f"{class_names[cls_idx]}: {count}"
+                                cv2.putText(annotated_frame, text, (10, y_offset),
+                                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+                                y_offset += 25
+                else:
+                    annotated_frame = frame
+
+            except Exception as e:
+                logger.warning(f"Prediction error: {e}")
                 annotated_frame = frame
 
             # Show FPS
@@ -160,18 +217,25 @@ def predict_camera(detector, camera_idx, args, class_names):
                             (actual_width - 150, 30),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
-            # Show confidence
+            # Show confidence threshold
             cv2.putText(annotated_frame, f"Conf: {conf_threshold:.2f}",
                         (actual_width - 150, 60),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
 
+            # Show model type
+            cv2.putText(annotated_frame, model_type,
+                        (10, actual_height - 10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 1)
+
             # Display live
-            cv2.imshow('Nail Detection - Live Camera', annotated_frame)
+            cv2.imshow(
+                f'Detection - Live Camera ({model_type})', annotated_frame)
 
             # Handle keyboard
             key = cv2.waitKey(1) & 0xFF
 
-            if key == ord('q') or key == 27:
+            if key == ord('q') or key == 27:  # 'q' or ESC
+                logger.info("\nQuitting...")
                 break
             elif key == ord('s'):
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -217,23 +281,31 @@ def main():
         logger.error(f"Weights file not found: {args.weights}")
         sys.exit(1)
 
+    # Load model
     detector = YOLODetector(model_name=str(weights_path),
                             device=args.device, verbose=args.verbose)
     logger.info(f"Using device: {detector.device}")
 
+    # Check model type
+    is_obb = is_obb_model(detector.model)
+    model_type = "OBB" if is_obb else "Detection"
+    logger.info(f"Model type: {model_type}")
+
+    # Load class names
     class_names = []
     if Path(args.data).exists():
         with open(args.data, 'r') as f:
             data_config = yaml.safe_load(f)
             class_names = data_config.get('names', [])
+            logger.info(f"Classes: {class_names}")
 
-    # Check if camera
+    # Check if camera source
     if is_camera_source(args.source):
         camera_idx = int(args.source)
         predict_camera(detector, camera_idx, args, class_names)
         return
 
-    # Handle files/directories
+    # Handle files/directories/videos
     source_path = Path(args.source)
     if not source_path.exists():
         logger.error(f"Source not found: {args.source}")
@@ -253,16 +325,17 @@ def main():
 
         total_detections = 0
         for i, result in enumerate(results):
-            num_detections = len(result.boxes)
+            # Get detections (compatible with both OBB and standard)
+            num_detections, classes, _ = get_detections_info(result, is_obb)
             total_detections += num_detections
 
             if num_detections > 0:
                 logger.info(f"\nImage {i+1}: {num_detections} detections")
-                classes = result.boxes.cls.cpu().numpy()
-                for cls_idx in range(len(class_names)):
-                    count = (classes == cls_idx).sum()
-                    if count > 0:
-                        logger.info(f"  {class_names[cls_idx]}: {count}")
+                if len(class_names) > 0:
+                    for cls_idx in range(len(class_names)):
+                        count = (classes == cls_idx).sum()
+                        if count > 0:
+                            logger.info(f"  {class_names[cls_idx]}: {count}")
 
             if args.view_img and result.orig_img is not None:
                 cv2.imshow(f"Prediction {i+1}", result.plot())

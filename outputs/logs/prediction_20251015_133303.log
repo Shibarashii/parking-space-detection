@@ -1,0 +1,18 @@
+2025-10-15 13:33:03 - prediction - INFO - ============================================================
+2025-10-15 13:33:03 - prediction - INFO - Starting Prediction
+2025-10-15 13:33:03 - prediction - INFO - ============================================================
+2025-10-15 13:33:03 - prediction - INFO - Weights: outputs/models/yolov11s-obb/weights/best.pt
+2025-10-15 13:33:03 - prediction - INFO - Source: data/image.png
+2025-10-15 13:33:03 - prediction - INFO - Confidence: 0.5
+2025-10-15 13:33:03 - prediction - INFO - Using device: cpu
+2025-10-15 13:33:03 - prediction - INFO - Model type: OBB
+2025-10-15 13:33:03 - prediction - INFO - Classes: ['empty', 'occupied']
+2025-10-15 13:33:03 - prediction - INFO - 
+Image 1: 52 detections
+2025-10-15 13:33:03 - prediction - INFO -   empty: 31
+2025-10-15 13:33:03 - prediction - INFO -   occupied: 21
+2025-10-15 13:33:03 - prediction - INFO - 
+Total detections: 52
+2025-10-15 13:33:03 - prediction - INFO - Average per image: 52.00
+2025-10-15 13:33:03 - prediction - INFO - 
+✅ Prediction completed!

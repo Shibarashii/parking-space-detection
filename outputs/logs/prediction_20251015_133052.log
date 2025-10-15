@@ -1,0 +1,9 @@
+2025-10-15 13:30:52 - prediction - INFO - ============================================================
+2025-10-15 13:30:52 - prediction - INFO - Starting Prediction
+2025-10-15 13:30:52 - prediction - INFO - ============================================================
+2025-10-15 13:30:52 - prediction - INFO - Weights: outputs/models/yolov11s-obb/weights/best.pt
+2025-10-15 13:30:52 - prediction - INFO - Source: 0
+2025-10-15 13:30:52 - prediction - INFO - Confidence: 0.75
+2025-10-15 13:30:52 - prediction - INFO - Using device: cpu
+2025-10-15 13:30:52 - prediction - INFO - Model type: OBB
+2025-10-15 13:30:52 - prediction - INFO - Classes: ['empty', 'occupied']
