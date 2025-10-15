@@ -467,7 +467,7 @@ def plot_with_custom_colors(result, class_names, line_width=2, show_labels=False
                 cv2.rectangle(
                     img, label_pos, (label_pos[0] + label_w, label_pos[1] - label_h - 5), color, -1)
                 cv2.putText(img, label, (label_pos[0], label_pos[1] - 5),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1)
     else:
         # Standard detection model
         if len(result.boxes) == 0:
@@ -504,7 +504,7 @@ def plot_with_custom_colors(result, class_names, line_width=2, show_labels=False
                 cv2.rectangle(img, (x1, y1 - label_h - 5),
                               (x1 + label_w, y1), color, -1)
                 cv2.putText(img, label, (x1, y1 - 5),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1)
 
     return img
 
