@@ -1,0 +1,28 @@
+2025-10-15 16:45:19 - prediction - INFO - ============================================================
+2025-10-15 16:45:19 - prediction - INFO - Starting Prediction
+2025-10-15 16:45:19 - prediction - INFO - ============================================================
+2025-10-15 16:45:19 - prediction - INFO - Weights: outputs/models/yolov11s-obb/weights/best.pt
+2025-10-15 16:45:19 - prediction - INFO - Source: data/test/img1.png
+2025-10-15 16:45:19 - prediction - INFO - Confidence: 0.5
+2025-10-15 16:45:19 - prediction - INFO - Using device: cpu
+2025-10-15 16:45:19 - prediction - INFO - Model type: OBB
+2025-10-15 16:45:19 - prediction - INFO - Classes: ['empty', 'occupied']
+2025-10-15 16:45:20 - prediction - INFO - Saving results to: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_164519
+2025-10-15 16:45:20 - prediction - INFO - 
+Image 1: 71 detections
+2025-10-15 16:45:20 - prediction - INFO -   empty: 27
+2025-10-15 16:45:20 - prediction - INFO -   occupied: 44
+2025-10-15 16:45:20 - prediction - INFO -   Saved: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_164519/img1.png
+2025-10-15 16:45:20 - prediction - INFO - 
+📊 Summary files saved:
+2025-10-15 16:45:20 - prediction - INFO -   json: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_164519/detection_summary.json
+2025-10-15 16:45:20 - prediction - INFO -   txt: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_164519/detection_summary.txt
+2025-10-15 16:45:20 - prediction - INFO -   csv: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_164519/detection_results.csv
+2025-10-15 16:45:20 - prediction - INFO -   visualization: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_164519/summary_visualization.jpg
+2025-10-15 16:45:20 - prediction - INFO - 
+Total detections: 71
+2025-10-15 16:45:20 - prediction - INFO - Average per image: 71.00
+2025-10-15 16:45:20 - prediction - INFO - 
+✅ Results saved to: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_164519
+2025-10-15 16:45:20 - prediction - INFO - 
+✅ Prediction completed!

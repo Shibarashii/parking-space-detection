@@ -46,7 +46,7 @@ def get_data_paths(data_yaml_path):
     paths = {}
 
     # Process each split (train, val, test)
-    for split_key in ['train', 'val', 'test']:
+    for split_key in ['train', 'val']:
         if split_key not in data_config:
             continue
 

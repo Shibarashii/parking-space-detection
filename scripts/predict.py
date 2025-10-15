@@ -408,6 +408,107 @@ class ParkingSummary:
         print("="*70 + "\n")
 
 
+def plot_with_custom_colors(result, class_names, line_width=2, show_labels=False, show_conf=False):
+    """
+    Plot detections with custom colors (Green for empty, Red for occupied)
+    Works with both standard detection and OBB models
+
+    Args:
+        result: YOLO result object
+        class_names: List of class names
+        line_width: Box line width
+        show_labels: Whether to show class labels
+        show_conf: Whether to show confidence scores
+
+    Returns:
+        Annotated image (BGR format)
+    """
+    img = result.orig_img.copy()
+
+    # Check if OBB or standard detection
+    is_obb = hasattr(result, 'obb') and result.obb is not None
+
+    if is_obb:
+        # OBB model
+        if len(result.obb) == 0:
+            return img
+
+        boxes = result.obb.xyxyxyxy.cpu().numpy()  # Rotated box corners
+        classes = result.obb.cls.cpu().numpy().astype(int)
+        confs = result.obb.conf.cpu().numpy()
+
+        for box, cls, conf in zip(boxes, classes, confs):
+            # Determine color based on class name
+            if cls < len(class_names):
+                class_name = class_names[cls].lower()
+                if class_name == 'empty':
+                    color = (0, 255, 0)  # Green (BGR)
+                elif class_name == 'occupied':
+                    color = (0, 0, 255)  # Red (BGR)
+                else:
+                    color = (255, 255, 0)  # Yellow (BGR)
+            else:
+                color = (255, 255, 255)  # White
+
+            # Draw rotated rectangle
+            points = box.reshape((-1, 1, 2)).astype(np.int32)
+            cv2.polylines(img, [points], isClosed=True,
+                          color=color, thickness=line_width)
+
+            # Add label if requested
+            if show_labels and cls < len(class_names):
+                label = class_names[cls]
+                if show_conf:
+                    label += f' {conf:.2f}'
+
+                label_pos = tuple(points[0][0])
+                (label_w, label_h), _ = cv2.getTextSize(
+                    label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
+                cv2.rectangle(
+                    img, label_pos, (label_pos[0] + label_w, label_pos[1] - label_h - 5), color, -1)
+                cv2.putText(img, label, (label_pos[0], label_pos[1] - 5),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+    else:
+        # Standard detection model
+        if len(result.boxes) == 0:
+            return img
+
+        boxes = result.boxes.xyxy.cpu().numpy()  # x1, y1, x2, y2
+        classes = result.boxes.cls.cpu().numpy().astype(int)
+        confs = result.boxes.conf.cpu().numpy()
+
+        for box, cls, conf in zip(boxes, classes, confs):
+            # Determine color based on class name
+            if cls < len(class_names):
+                class_name = class_names[cls].lower()
+                if class_name == 'empty':
+                    color = (0, 255, 0)  # Green (BGR)
+                elif class_name == 'occupied':
+                    color = (0, 0, 255)  # Red (BGR)
+                else:
+                    color = (255, 255, 0)  # Yellow (BGR)
+            else:
+                color = (255, 255, 255)  # White
+
+            x1, y1, x2, y2 = box.astype(int)
+            cv2.rectangle(img, (x1, y1), (x2, y2), color, line_width)
+
+            # Add label if requested
+            if show_labels and cls < len(class_names):
+                label = class_names[cls]
+                if show_conf:
+                    label += f' {conf:.2f}'
+
+                (label_w, label_h), _ = cv2.getTextSize(
+                    label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
+                cv2.rectangle(img, (x1, y1 - label_h - 5),
+                              (x1 + label_w, y1), color, -1)
+                cv2.putText(img, label, (x1, y1 - 5),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+
+    return img
+
+
 def predict_camera(detector, camera_idx, args, class_names):
     """Handle camera/webcam prediction with live view"""
     logger = get_logger("prediction")
@@ -462,25 +563,36 @@ def predict_camera(detector, camera_idx, args, class_names):
                     save=False,
                     verbose=False
                 )
-
-                # Get annotated frame
                 if results and len(results) > 0:
                     result = results[0]
-                    annotated_frame = result.plot()
+                    # Use custom plotting with green/red colors
+                    annotated_frame = plot_with_custom_colors(
+                        result,
+                        class_names,
+                        line_width=args.line_width,
+                        show_labels=args.show_labels,
+                        show_conf=args.show_conf
+                    )
 
-                    # Get detections (compatible with both OBB and standard)
+                    # Get detections
                     num_detections, classes, _, confs = get_detections_info(
                         result, is_obb)
 
-                    # Display detection counts
+                    # Display detection counts on frame
                     if num_detections > 0 and len(class_names) > 0:
                         y_offset = 30
                         for cls_idx in range(len(class_names)):
                             count = (classes == cls_idx).sum()
                             if count > 0:
+                                # Use matching colors for text
+                                if class_names[cls_idx].lower() == 'empty':
+                                    text_color = (0, 255, 0)  # Green
+                                else:
+                                    text_color = (0, 0, 255)  # Red
+
                                 text = f"{class_names[cls_idx]}: {count}"
                                 cv2.putText(annotated_frame, text, (10, y_offset),
-                                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+                                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, text_color, 2)
                                 y_offset += 25
                 else:
                     annotated_frame = frame
@@ -601,18 +713,32 @@ def main():
 
     try:
         results = detector.predict(
-            source=args.source, project=args.project, name=args.name, **predict_config)
+            source=args.source,
+            project=args.project,
+            name=args.name,
+            save=False,  # ← Disable YOLO's default save
+            save_txt=args.save_txt,
+            save_conf=args.save_conf,
+            save_crop=args.save_crop,
+            **{k: v for k, v in predict_config.items() if k not in ['save', 'save_txt', 'save_conf', 'save_crop']}
+        )
 
         # Initialize parking summary if enabled
         parking_summary = None
         if args.save_summary and len(class_names) > 0:
             parking_summary = ParkingSummary(class_names)
 
+        # Create save directory
+        if args.save:
+            save_dir = Path(args.project) / args.name
+            save_dir.mkdir(parents=True, exist_ok=True)
+            logger.info(f"Saving results to: {save_dir}")
+
         total_detections = 0
         for i, result in enumerate(results):
-            # Get detections (compatible with both OBB and standard)
+            # Get detections
             num_detections, classes, _, confs = get_detections_info(
-                result, is_obb)  # ← FIX HERE
+                result, is_obb)
             total_detections += num_detections
 
             # Add to parking summary
@@ -630,14 +756,32 @@ def main():
                         if count > 0:
                             logger.info(f"  {class_names[cls_idx]}: {count}")
 
-            if args.view_img and result.orig_img is not None:
-                cv2.imshow(f"Prediction {i+1}", result.plot())
+            # Plot with custom colors
+            plotted = plot_with_custom_colors(
+                result,
+                class_names,
+                line_width=args.line_width,
+                show_labels=args.show_labels,
+                show_conf=args.show_conf
+            )
+
+            # Save the custom-colored image
+            if args.save:
+                image_name = Path(result.path).name if hasattr(
+                    result, 'path') else f"image_{i+1}.jpg"
+                output_path = save_dir / image_name
+                cv2.imwrite(str(output_path), plotted)
+                logger.info(f"  Saved: {output_path}")
+
+            # Display if requested
+            if args.view_img:
+                cv2.imshow(f"Prediction {i+1}", plotted)
                 cv2.waitKey(0)
 
         # Save parking summary if enabled
         if parking_summary and args.save_summary:
-            save_dir = Path(results[0].save_dir) if results else Path(
-                args.project) / args.name
+            if not args.save:
+                save_dir = Path(args.project) / args.name
             summary_paths = parking_summary.save_all(save_dir)
             parking_summary.print_summary()
 
@@ -649,8 +793,8 @@ def main():
         if len(results) > 0:
             logger.info(
                 f"Average per image: {total_detections/len(results):.2f}")
-        if args.save and results:
-            logger.info(f"\nResults saved to: {results[0].save_dir}")
+        if args.save:
+            logger.info(f"\n✅ Results saved to: {save_dir}")
 
         logger.info("\n✅ Prediction completed!")
         if args.view_img:

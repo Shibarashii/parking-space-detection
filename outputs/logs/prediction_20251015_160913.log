@@ -1,0 +1,2606 @@
+2025-10-15 16:09:13 - prediction - INFO - ============================================================
+2025-10-15 16:09:13 - prediction - INFO - Starting Prediction
+2025-10-15 16:09:13 - prediction - INFO - ============================================================
+2025-10-15 16:09:13 - prediction - INFO - Weights: outputs/models/yolov11s-obb/weights/best.pt
+2025-10-15 16:09:13 - prediction - INFO - Source: data/test/vid1.mp4
+2025-10-15 16:09:13 - prediction - INFO - Confidence: 0.5
+2025-10-15 16:09:13 - prediction - INFO - Using device: cpu
+2025-10-15 16:09:13 - prediction - INFO - Model type: OBB
+2025-10-15 16:09:13 - prediction - INFO - Classes: ['empty', 'occupied']
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 1: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 181
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 2: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 181
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 3: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 23
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 4: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 23
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 5: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 24
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 182
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 6: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 25
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 181
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 7: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 183
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 8: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 183
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 9: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 21
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 10: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 21
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 11: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 184
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 12: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 184
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 13: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 14: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 15: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 21
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 183
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 16: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 21
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 183
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 17: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 18: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 19: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 21
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 20: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 21: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 22: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 23: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 22
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 24: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 21
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 25: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 26: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 27: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 184
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 28: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 184
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 29: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 30: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 31: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 32: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 33: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 34: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 35: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 20
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 36: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 20
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 183
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 37: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 183
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 38: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 183
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 39: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 40: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 41: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 42: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 20
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 43: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 21
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 184
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 44: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 21
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 184
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 45: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 185
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 46: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 184
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 47: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 48: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 49: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 50: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 51: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 52: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 186
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 53: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 54: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 20
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 55: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 20
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 56: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 57: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 58: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 19
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 59: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 60: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 61: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 62: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 63: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 64: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 65: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 66: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 67: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 68: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 69: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 70: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 71: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 72: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 73: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 74: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 75: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 76: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 77: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 78: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 79: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 80: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 81: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 82: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 83: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 84: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 85: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 86: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 87: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 88: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 89: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 90: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 91: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 92: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 93: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 94: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 95: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 96: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 97: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 98: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 99: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 100: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 101: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 102: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 103: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 104: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 105: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 106: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 107: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 108: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 109: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 110: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 111: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 112: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 113: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 114: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 115: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 116: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 117: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 118: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 119: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 120: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 121: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 122: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 123: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 124: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 125: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 126: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 127: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 128: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 129: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 130: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 131: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 187
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 132: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 133: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 134: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 135: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 136: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 137: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 138: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 139: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 140: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 141: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 142: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 143: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 144: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 145: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 146: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 147: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 148: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 149: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 150: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 151: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 152: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 153: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 154: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 155: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 156: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 157: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 158: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 159: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 160: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 161: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 18
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 162: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 163: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 164: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 165: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 166: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 167: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 168: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 169: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 170: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 171: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 172: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 173: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 174: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 175: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 176: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 177: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 178: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 179: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 180: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 181: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 182: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 183: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 184: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 185: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 186: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 187: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 188: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 189: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 190: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 191: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 192: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 193: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 194: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 195: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 196: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 197: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 198: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 199: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 200: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 201: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 202: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 203: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 204: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 205: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 206: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 207: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 208: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 209: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 210: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 211: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 212: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 213: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 214: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 215: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 216: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 217: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 218: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 219: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 220: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 221: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 222: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 223: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 224: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 225: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 226: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 227: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 228: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 229: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 230: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 231: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 232: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 233: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 234: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 235: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 236: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 237: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 238: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 239: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 240: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 241: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 242: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 243: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 244: 201 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 245: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 246: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 247: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 248: 201 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 249: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 250: 201 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 251: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 188
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 252: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 253: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 254: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 255: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 256: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 257: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 258: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 259: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 260: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 261: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 262: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 263: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 264: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 265: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 266: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 267: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 268: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 269: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 270: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 271: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 272: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 273: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 274: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 275: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 276: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 277: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 189
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 278: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 279: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 280: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 190
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 281: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 282: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 283: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 284: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 285: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 286: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 287: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 288: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 289: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 290: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 291: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 292: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 293: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 294: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 295: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 296: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 297: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 298: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 299: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 300: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 301: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 302: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 303: 201 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 304: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 305: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 306: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 307: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 308: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 309: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 310: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 311: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 312: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 313: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 314: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 315: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 316: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 317: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 318: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 191
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 319: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 320: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 321: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 322: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 323: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 324: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 325: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 326: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 327: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 328: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 329: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 330: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 331: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 332: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 333: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 334: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 335: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 336: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 337: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 338: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 339: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 340: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 341: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 342: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 343: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 344: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 345: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 346: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 347: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 348: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 349: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 350: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 351: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 17
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 352: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 16
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 353: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 354: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 355: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 356: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 357: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 358: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 359: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 360: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 361: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 362: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 363: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 364: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 365: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 366: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 367: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 368: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 369: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 370: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 371: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 372: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 373: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 374: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 375: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 376: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 377: 201 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 378: 201 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 379: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 380: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 381: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 382: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 383: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 384: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 385: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 386: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 387: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 388: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 389: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 390: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 391: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 392: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 393: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 394: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 395: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 396: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 397: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 398: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 15
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 399: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 400: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 401: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 402: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 403: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 404: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 405: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 406: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 407: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 408: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 409: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 410: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 411: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 412: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 413: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 414: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 415: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 416: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 417: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 418: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 192
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 419: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 420: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 193
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 421: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 422: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 423: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 424: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 425: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 426: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 427: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 428: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 429: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 430: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 431: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 432: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 433: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 14
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 434: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 435: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 436: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 437: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 13
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 438: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 439: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 440: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 441: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 442: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 443: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 444: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 445: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 446: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 447: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 448: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 449: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 450: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 451: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 452: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 453: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 454: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 455: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 456: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 196
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 457: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 458: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 194
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 459: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 460: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 195
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 461: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 462: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 463: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 464: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 465: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 466: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 467: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 468: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 469: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 470: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 471: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 472: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 473: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 474: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 475: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 476: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 477: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 478: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 479: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 480: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 481: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 482: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 483: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 484: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 11
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 485: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 486: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 12
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 487: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 488: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 489: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 490: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 491: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 492: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 493: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 494: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 495: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 496: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 497: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 498: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 499: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 500: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 501: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 502: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 503: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 504: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 505: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 506: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 507: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 508: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 509: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 510: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 511: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 512: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 513: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 514: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 515: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 516: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 517: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 518: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 519: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 520: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 521: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 522: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 523: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 524: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 525: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 526: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 527: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 528: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 529: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 530: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 531: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 532: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 533: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 534: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 535: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 536: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 537: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 538: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 539: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 540: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 541: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 542: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 543: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 544: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 545: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 546: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 547: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 548: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 549: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 550: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 202
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 551: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 552: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 553: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 554: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 555: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 556: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 557: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 558: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 559: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 560: 208 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 561: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 562: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 563: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 564: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 565: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 566: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 567: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 568: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 569: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 570: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 571: 216 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 572: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 573: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 574: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 9
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 575: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 576: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 577: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 578: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 579: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 580: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 581: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 582: 215 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 10
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 583: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 584: 212 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 205
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 585: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 586: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 587: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 588: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 589: 213 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 206
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 590: 214 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 207
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 591: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 592: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 593: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 594: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 595: 211 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 204
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 596: 210 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 203
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 597: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 598: 209 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 8
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 201
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 599: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 600: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 601: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 602: 207 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 603: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 604: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 605: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 606: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 607: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 608: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 609: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 610: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 611: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 612: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 613: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 614: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 615: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 616: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 617: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 618: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 619: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 620: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 621: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 622: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 623: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 4
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 624: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 625: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 626: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 627: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 628: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 629: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 630: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 631: 202 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 5
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 632: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 633: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 634: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 635: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 636: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 7
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 637: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 638: 203 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 197
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 639: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 640: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 641: 204 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 198
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 642: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 200
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 643: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 644: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 6
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 199
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 645: 206 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 25
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 181
+2025-10-15 16:12:35 - prediction - INFO - 
+Image 646: 205 detections
+2025-10-15 16:12:35 - prediction - INFO -   empty: 25
+2025-10-15 16:12:35 - prediction - INFO -   occupied: 180
+2025-10-15 16:12:35 - prediction - INFO - 
+📊 Summary files saved:
+2025-10-15 16:12:35 - prediction - INFO -   json: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_160913/detection_summary.json
+2025-10-15 16:12:35 - prediction - INFO -   txt: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_160913/detection_summary.txt
+2025-10-15 16:12:35 - prediction - INFO -   csv: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_160913/detection_results.csv
+2025-10-15 16:12:35 - prediction - INFO -   visualization: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_160913/summary_visualization.jpg
+2025-10-15 16:12:35 - prediction - INFO - 
+Total detections: 133479
+2025-10-15 16:12:35 - prediction - INFO - Average per image: 206.62
+2025-10-15 16:12:35 - prediction - INFO - 
+Results saved to: /home/shiba/Projects/Github Repos/parking-space-detection/outputs/predictions/predict_20251015_160913
+2025-10-15 16:12:35 - prediction - INFO - 
+✅ Prediction completed!
